@@ -78,7 +78,7 @@ section{
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/background.jpg);
+	background-image: url(../img/fondo-estrellas.jpg);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -134,6 +134,7 @@ header.sticky{
 	padding: 12px 15%;
 }
 
+/********* SOBRE MI *********/
 .about{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -161,7 +162,16 @@ header.sticky{
 	color: var(--second-color);
 	font-size: var(--p-font);
 	line-height: 1.8;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
+}
+.about-text a{
+    color: aquamarine;
+}
+.about-text b{
+    color: aquamarine;
+}
+.about-text .btn {
+    color: var(--text-color);
 }
 
 .services{
