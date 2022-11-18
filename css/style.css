@@ -8,11 +8,23 @@
 	scroll-behavior: smooth;
 }
 :root{
+
+	/* COLORES INICIALES 
 	--bg-color: #2a2a2a;
 	--second-bg-color: #202020;
 	--text-color: #fff;
 	--second-color: #ccc;
-	--main-color: #ff4d05;
+	--main-color: #ff4d05; */
+
+
+	/* COLORES MIOS */
+	--bg-color: #fff;
+	--second-bg-color: #F1F1F1;
+	--text-color: #000;
+	--second-color: #3B3B3B;
+	--main-color: #64F0A9;
+
+
 	--big-font: 4rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
@@ -78,7 +90,8 @@ section{
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/fondo-estrellas.jpg);
+	/*background-image: url(../img/fondo-plantas.jpg);*/
+	background-color: #fff;
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -165,16 +178,18 @@ header.sticky{
 	margin-bottom: 2rem;
 }
 .about-text a{
-    color: aquamarine;
+    color: var(--main-color);
 }
 .about-text b{
-    color: aquamarine;
+    color: var(--main-color);
 }
 .about-text .btn {
     color: var(--text-color);
 }
 
-.services{
+
+/* CONOCIMIENTOS */
+.conocimientos{
 	background: var(--second-bg-color);
 }
 .main-text{
@@ -189,7 +204,8 @@ header.sticky{
 	font-size: var(--h2-font);
 	line-height: 1;
 }
-.services-content{
+/*
+.conocimientos-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 	align-items: center;
@@ -237,7 +253,7 @@ header.sticky{
 	transform: translateY(-8px);
 	cursor: pointer;
 }
-
+*/
 .portfolio-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
