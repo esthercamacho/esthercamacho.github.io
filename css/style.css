@@ -203,9 +203,18 @@ header.sticky{
 .main-text h2{
 	font-size: var(--h2-font);
 	line-height: 1;
+	margin-bottom: 20px;
 }
 .skills__container{
-	row-gap: 3.5rem;
+	/*row-gap: 3.5rem;*/
+	width: 80%;
+	margin: 0 auto;
+	border: 1px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.skills__content{
+	border: 1px;
 }
 .skills__title{
 	display: flex;
@@ -213,6 +222,7 @@ header.sticky{
 	align-items: center;
 	column-gap: .5rem;
 	margin-bottom: 2.5rem;
+	margin-top: 2.5rem;
 }
 .skills__title i{
 	font-size: 1rem;
@@ -222,10 +232,31 @@ header.sticky{
 .skills_data,
 .skills__blob{
 	display: grid;
+	/*grid-template-columns: auto auto auto;*/
 }
 .skills__info{
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: auto auto auto;
 	gap: 2.5rem 2rem;
+}
+.skills__data{
+	justify-content: center;
+	text-align: center;
+}
+.skills__blob{
+	justify-content: center;
+	text-align: center;
+	
+}
+/*
+.skills__info{
+	/*grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: auto auto auto;
+	gap: 2.5rem 2rem;
+	margin: 5px;
+	border: 5px;
+	border-color: #000;
+	display: grid;
+
 }
 .skills__data{
 	justify-content: center;
@@ -237,15 +268,40 @@ header.sticky{
 	background-color: var(--bg-color);
 	border-radius: 3rem;
 	place-items: center;
+	justify-content: center;
 	margin-bottom: 1rem;
-}
+	margin-top: 1rem;
+}*/
 .skills__blob img{
 	width: 40px;
+	justify-content: center;
 }
 .skills__name{
 	margin-bottom: .25rem;
 }
 
+
+/* ANIMACIONES */
+.skills__blob:hover img{
+	animation: bounce-skills .6s;
+}
+@keyframes bounce-skills{
+	0%{
+		transform: translate(0);
+	}
+	20%{
+		transform: translateY(-6px);
+	}
+	40%{
+		transform: translate(0);
+	}
+	60%{
+		transform: translateY(-3px);
+	}
+	80%{
+		transform: translate(0);
+	}
+}
 
 
 
