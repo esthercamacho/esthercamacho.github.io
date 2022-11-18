@@ -153,6 +153,7 @@ header.sticky{
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 1.5rem;
+	background: var(--second-bg-color);
 }
 .about-img img{
 	max-width: 530px;
@@ -188,6 +189,75 @@ header.sticky{
 }
 
 
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+	font-size: 26px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #050d18;
+  }
+  .resume .container{
+	gap: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+  }
+  
+  .resume .resume-item {
+	padding: 0 0 20px 20px;
+	margin-top: -2px;
+	border-left: 2px solid var(--main-color);
+	position: relative;
+  }
+  
+  .resume .resume-item h4 {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--text-color);
+	line-height: 1.7;
+	margin-bottom: 5px;
+  }
+  
+  .resume .resume-item h5 {
+	font-size: 16px;
+	background: #caf1e1;
+	padding: 5px 15px;
+	display: inline-block;
+	font-weight: 600;
+	margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+	padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+	padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+	padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50px;
+	left: -9px;
+	top: 0;
+	background: #fff;
+	border: 2px solid var(--main-color);
+  }
+
+
+
+
 /* CONOCIMIENTOS */
 .conocimientos{
 	background: var(--second-bg-color);
@@ -207,15 +277,15 @@ header.sticky{
 }
 .skills__container{
 	/*row-gap: 3.5rem;*/
-	width: 80%;
-	margin: 0 auto;
+	margin-left: 15;
 	border: 1px;
-	display: grid;
-	grid-template-columns: 50% 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+	
 }
-.skills__content{
-	border: 1px;
-}
+
 .skills__title{
 	display: flex;
 	justify-content: center;
@@ -231,11 +301,13 @@ header.sticky{
 .skills__info,
 .skills_data,
 .skills__blob{
-	display: grid;
-	/*grid-template-columns: auto auto auto;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-flow: wrap;
+	margin: 20px;
 }
 .skills__info{
-	grid-template-columns: auto auto auto;
 	gap: 2.5rem 2rem;
 }
 .skills__data{
@@ -245,6 +317,12 @@ header.sticky{
 .skills__blob{
 	justify-content: center;
 	text-align: center;
+	width: 80px;
+	height: 100px;
+	background-color: var(--bg-color);
+	border-radius: 3rem;
+	place-items: center;
+	margin-bottom: 1rem;
 	
 }
 /*
@@ -274,7 +352,6 @@ header.sticky{
 }*/
 .skills__blob img{
 	width: 40px;
-	justify-content: center;
 }
 .skills__name{
 	margin-bottom: .25rem;
@@ -304,57 +381,6 @@ header.sticky{
 }
 
 
-
-/*
-.conocimientos-content{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-	align-items: center;
-	gap: 2.5rem;
-	margin-top: 5rem;
-}
-.box{
-	background: var(--bg-color);
-	padding: 35px 45px;
-	border-radius: 8px;
-	transition: all .45s ease;
-}
-.s-icons i{
-	font-size: 32px;
-	margin-bottom: 20px;
-}
-.box h3{
-	font-size: 24px;
-	font-weight: 600;
-	color: var(--text-color);
-	margin-bottom: 15px;
-}
-.box p{
-	color: var(--second-color);
-	font-size: 1rem;
-	line-height: 1.8;
-	margin-bottom: 25px;
-}
-.read{
-	display: inline-block;
-	padding: 8px 18px;
-	background: #333333;
-	color: var(--second-color);
-	font-size: 14px;
-	font-weight: 500;
-	border-radius: 8px;
-	transition: all .45s ease;
-}
-.read:hover{
-	letter-spacing: 1px;
-	background: #ffffff99;
-	color: var(--text-color);
-}
-.box:hover{
-	transform: translateY(-8px);
-	cursor: pointer;
-}
-*/
 .portfolio-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
