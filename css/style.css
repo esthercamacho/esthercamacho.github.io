@@ -190,7 +190,7 @@ header.sticky{
 
 
 /*--------------------------------------------------------------
-# Resume
+# FORMACIÓN
 --------------------------------------------------------------*/
 .resume .resume-title {
 	font-size: 26px;
@@ -201,12 +201,13 @@ header.sticky{
   }
   .resume .container{
 	gap: 1rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-flow: wrap;
+	column-count: 2;
+	column-gap: 3em;
+	column-width: 300px;
+	align-items: center;
+
   }
-  
+
   .resume .resume-item {
 	padding: 0 0 20px 20px;
 	margin-top: -2px;
