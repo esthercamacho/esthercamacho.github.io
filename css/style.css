@@ -447,6 +447,7 @@ header.sticky{
 	height: 100%;
 }
 
+/*************** CONTACTO ****************/
 .contact{
 	background: var(--second-bg-color);
 	display: grid;
