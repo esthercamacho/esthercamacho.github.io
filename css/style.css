@@ -242,6 +242,7 @@ header.sticky{
 	font-size: 16px;
 	color: var(--negrita);
 	background: #caf1e1;
+	border-radius: 10px;
 	padding: 5px 15px;
 	display: inline-block;
 	font-weight: 600;
