@@ -1,4 +1,6 @@
-/* MENU DESPLEGABLE */
+/*****************************************************************
+ *  MENU DESPLEGABLE 
+ ****************************************************************/
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
 	header.classList.toggle("sticky", window.scrollY > 100);
@@ -18,32 +20,34 @@ window.onscroll = () => {
 };
 
 
-/****** MODO OSCURO ********/
+/*****************************************************************
+ *  MODO OSCURO
+ ****************************************************************/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
 
-//Previously selected topic (if user selected)
+// Tema seleccionado previamente (si está seleccionado por el usuario)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-//We obtain the current theme that the interface has by validating the dark-theme class
+// Obtenemos el tema actual que tiene la interfaz validando la clase dark-theme
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'ligth'
 const getCurrentIcon = () => document.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
-//We validate if the user previously chose a topic
+// Validamos si el usuario eligió previamente un tema
 if(selectedTheme){
-	//If the validation is fullfilled, we ask the issue was to know if we activated or desactivated the dark mode
+	// Activamos/desactivamos modo oscuro
 	document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
 	themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
-//Activate / desactivate the theme manually with the button
+// Activar/desactivar el tema manualmente con el botón
 themeButton.addEventListener('click', () => {
-	//Add or remove the dark/icon theme
+	// Agregar o eliminar el tema oscuro/icono
 	document.body.classList.toggle(darkTheme)
 	themeButton.classList.toggle(iconTheme)
-	//We save the theme and the current icon that the user chose
+	// Guardamos el tema y el icono actual que eligió el usuario
 	localStorage.setItem('selected-theme', getCurrentTheme())
 	localStorage.setItem('selected-icon', getCurrentIcon())
 })
