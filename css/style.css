@@ -664,9 +664,8 @@ form textarea{
 		order: 2;
 	}
 	.home-img img{
-		width: 120px;
+		width: 50%;
 		height: auto;
-		/*max-width: 100%;*/
 	}
 }
 
@@ -700,6 +699,14 @@ form textarea{
 	}
 	.navlist.open{
 		top: 100%;
+	}
+}
+
+
+@media (max-width: 400px){
+	.home-img img{
+		width: 100px;
+		height: auto;
 	}
 }
 
