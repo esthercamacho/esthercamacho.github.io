@@ -112,9 +112,13 @@ section{
 	background-color: var(--bg-color);
 	background-size: cover;
 	background-position: center;
-	display: flex;
+	
 	align-items: center;
 	justify-content: flex-start;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
 }
 
 .home-text h1{
@@ -157,7 +161,11 @@ section{
 .btn:hover{
 	transform: scale(0.9);
 }
-
+.home-img img{
+	max-width: 100%;
+	width: 570px;
+	height: auto;
+}
 
 header.sticky{
 	background: var(--bg-color);
