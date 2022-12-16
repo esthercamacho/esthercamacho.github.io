@@ -13,12 +13,18 @@
 	--second-bg-color: #F1F1F1;
 	--text-color: #000;
 	--second-color: #3B3B3B;
-	--main-color: #64F0A9;
+	--main-color: #BF4CA9;
+	--main-claro: #D59DCA;
 	--negrita: #000;
 
 	--big-font: 4rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
+
+	/* Verde */
+	/* --main-color: #64F0A9; */
+	/* Verde clarito */
+	/* --main-claro: #caf1e1; */
 }
 /************ VARIABLES TEMA OSCURO ************/
 body.dark-theme{
@@ -26,8 +32,11 @@ body.dark-theme{
 	--second-bg-color: #3B3B3B;
 	--text-color: #fff;
 	--second-color: #F1F1F1;
-	--main-color: #64F0A9;
+	--main-color: #BF4CA9;
 	--negrita: #000;
+
+	/* Verde */
+	/* --main-color: #64F0A9; */
 
 }
 /************ BOTON TEMA CLARO/OSCURO ************/
@@ -276,7 +285,7 @@ header.sticky{
   .resume .resume-item h5 {
 	font-size: 16px;
 	color: var(--negrita);
-	background: #caf1e1;
+	background: var(--main-claro);
 	border-radius: 10px;
 	padding: 5px 15px;
 	display: inline-block;
@@ -309,7 +318,7 @@ header.sticky{
 	border-radius: 50px;
 	left: -9px;
 	top: 0;
-	background: #caf1e1;
+	background: var(--main-claro);
 	border: 2px solid var(--main-color);
   }
 
