@@ -170,6 +170,10 @@ section{
 .btn:hover{
 	transform: scale(0.9);
 }
+.home-img{
+	display: flex;
+	justify-content: center;
+}
 .home-img img{
 	max-width: 100%;
 	width: fit-content;
